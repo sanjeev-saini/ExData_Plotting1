@@ -49,9 +49,9 @@ my_electricity2days <- my_electricity %>%
     filter(Date == ymd("2007-02-01")  | Date == ymd("2007-02-02")) %>%
     mutate(DateTime = as_datetime(paste(Date, 
                                         Time
-    )
-    )
-    )
+                                  )
+                      )
+)
 
 # remove the large dataset
 rm("my_electricity")
